@@ -5,20 +5,20 @@ import { useRouter } from 'expo-router';
 import { globalStyles } from '../../constants/theme';
 
 export default function App() {
-  const router = useRouter();
+    const router = useRouter();
 
-  return (
-    <View style={globalStyles.header}>
-      <Text style={globalStyles.title}>Hola!!!</Text>
-      <Text style={globalStyles.subtitle}>USUARIO</Text>
-      <Text style={globalStyles.date}>08/05/2026</Text>
+    return (
+        <View style={globalStyles.header}>
+            <Text style={globalStyles.title}>Mapa Sitp Bogota </Text>
+            
+            <Text style={globalStyles.date}>05/08/2026</Text>
 
-      <TouchableOpacity
-        style={globalStyles.button}
-        onPress={() => router.push('./detalles')}
-      >
-        <Text style={globalStyles.buttonText}>INGRESAR</Text>
-      </TouchableOpacity>
-    </View>
-  );
+            <TouchableOpacity 
+                style={globalStyles.button}
+                onPress={() => router.push('./detalles')}
+            >
+                <Text style={globalStyles.buttonText}>INGRESAR</Text>
+            </TouchableOpacity>
+        </View>
+    );
 }
